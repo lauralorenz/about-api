@@ -19,7 +19,7 @@ GO111MODULE=on go install "k8s.io/code-generator/cmd/informer-gen@v0.29.1"
 export GOPATH=$(go env GOPATH | awk -F ':' '{print $1}')
 
 echo "Generating deep copy files with controller-gen"
-controller-gen object:headerFile="hack/boilerplate/boilerplate.generatego.txt" paths="./api/v1alpha1/..."
+controller-gen object:headerFile="hack/boilerplate/boilerplate.generatego.txt" paths="./pkg/apis/v1alpha1/..."
 
 echo "Generating with register-gen"
 register-gen \

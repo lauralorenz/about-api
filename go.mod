@@ -1,4 +1,4 @@
-module k8s.io/clusterproperty
+module sigs.k8s.io/about-api
 
 go 1.22.0
 
@@ -10,7 +10,6 @@ require (
 	k8s.io/apimachinery v0.29.1
 	k8s.io/client-go v0.29.1
 	k8s.io/code-generator v0.29.0
-	sigs.k8s.io/about-api v0.0.0-20260212043000-8d585a6b38e9
 	sigs.k8s.io/controller-runtime v0.17.0
 )
 
